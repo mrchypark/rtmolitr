@@ -1,2 +1,4 @@
+^data-raw$
+^LICENSE\.md$
 ^rtmolitr\.Rproj$
 ^\.Rproj\.user$

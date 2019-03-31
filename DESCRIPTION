@@ -1,14 +1,20 @@
 Package: rtmolitr
-Title: What the Package Does (One Line, Title Case)
+Title: 국토교통부 실거래가 api 사용 패키지
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+    person(
+          given = 'Chanyub',
+          family = 'Park',
+          email = 'mrchypark@gmail.com',
+          role = c("aut", "cre"),
+          comment = structure("0000-0001-6474-2570", .Names = "ORCID"))
+Description: 국토교통부에서 재공하는 실거래가 정보를 가져오는 패키지입니다.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/mrchypark/rtmolitr
 BugReports: https://github.com/mrchypark/rtmolitr/issues
+Imports: 
+    keyring,
+    tibble
+RoxygenNote: 6.1.1
