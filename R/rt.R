@@ -6,8 +6,9 @@
 #' @export
 #' @return a [tibble][tibble::tibble-package]
 #' @importFrom httr GET content
-#' @importFrom purrr transpose map
+#' @importFrom purrr transpose map when
 #' @importFrom dplyr as_tibble
+#' @importFrom stringr str_squish
 rt_get <- function(region_code, dateym, service_key = NULL) {
 
   if (is.null(service_key)) {
@@ -41,8 +42,12 @@ rt_get <- function(region_code, dateym, service_key = NULL) {
     .$body %>%
     .$items %>%
     .$item %>%
-    purrr::transpose() %>%
-    purrr::map( ~ as.character(.x)) %>%
+    purrr::when(
+      res$body$totalCount == 1 ~ .,
+      ~ purrr::transpose(.)
+    ) %>%
+    purrr::map( ~ as.character(.x) %>%
+                  stringr::str_squish()) %>%
     dplyr::as_tibble() %>%
     return()
 }

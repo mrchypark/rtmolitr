@@ -22,5 +22,6 @@ Imports:
     magrittr,
     dplyr,
     httr,
-    purrr
+    purrr,
+    stringr
 RoxygenNote: 6.1.1
