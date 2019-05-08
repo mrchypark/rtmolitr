@@ -3,6 +3,8 @@
 
 # rtmolitr
 
+# WORKING IN PROGRESS
+
 <!-- badges: start -->
 
 <!-- badges: end -->
@@ -29,9 +31,8 @@ pak::pgk_install("mrchypark/rtmolitr")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+`rtmolitr` 패키지가 데이터를 가져오는 방법은 두 가지가 있습니다.
 
 ``` r
 library(rtmolitr)
-## basic example code
 ```
