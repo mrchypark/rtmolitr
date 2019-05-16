@@ -22,11 +22,11 @@ install.packages("rtmolitr")
 
 개발 버전은 [github](https://www.github.com/mrchypark/rtmolitr)에서 다운로드 하거나
 설치할 수 있습니다. `github`에서 호스팅 하는 패키지를 설치하는 방법이 많습니다만,
-[pak](https://github.com/r-lib/pak) 패키지 사용을 추천합니다.
+[remotes](https://github.com/r-lib/remotes) 패키지 사용을 추천합니다.
 
 ``` r
-# install.packages("pak")
-pak::pkg_install("mrchypark/rtmolitr")
+# install.packages("remotes")
+remotes::install_github("mrchypark/rtmolitr")
 ```
 
 ## Example
