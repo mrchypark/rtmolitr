@@ -26,7 +26,7 @@ install.packages("rtmolitr")
 
 ``` r
 # install.packages("pak")
-pak::pgk_install("mrchypark/rtmolitr")
+pak::pkg_install("mrchypark/rtmolitr")
 ```
 
 ## Example
