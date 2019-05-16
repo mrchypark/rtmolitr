@@ -1,5 +1,5 @@
 Package: rtmolitr
-Title: 국토교통부 실거래가 api 사용 패키지
+Title: Wrapper Package for Molit API
 Version: 0.0.0.9001
 Authors@R: 
     person(
@@ -8,7 +8,7 @@ Authors@R:
           email = 'mrchypark@gmail.com',
           role = c("aut", "cre"),
           comment = structure("0000-0001-6474-2570", .Names = "ORCID"))
-Description: 국토교통부에서 재공하는 실거래가 정보를 가져오는 패키지입니다.
+Description: Molit <http://rt.molit.go.kr/> wrapper package
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
